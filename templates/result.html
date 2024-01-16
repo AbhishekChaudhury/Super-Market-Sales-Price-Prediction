@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='background.jpg') }}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #000; /* Set title color to black */
+            font-size: 28px; /* Increase font size slightly */
+        }
+
+        .result-container {
+            background-color: transparent /* transparent background */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        p {
+            font-size: 24px;
+            color: #000; /* Set text color to black */
+        }
+
+        a {
+            color: #000; /* Set link color */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <div class="result-container">
+        <p>Prediction: <span>{{ prediction_value }}</span></p>
+        <a href="/">Go back to the form</a>
+    </div>
+</body>
+</html>
