@@ -13,7 +13,8 @@ def index():
 @app.route('/predict',methods=['POST'])
 def result():
 
-    item_weight= float(request.form['item_weight'])
+    # item_weight= float(request.form['item_weight'])
+    print("Hello")
     item_fat_content=float(request.form['item_fat_content'])
     item_visibility= float(request.form['item_visibility'])
     item_type= float(request.form['item_type'])
